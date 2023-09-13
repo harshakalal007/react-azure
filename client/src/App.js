@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://sample-testing.azurewebsites.net/check")
+      .get("https://testing-azure.onrender.com/")
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
   }, []);
