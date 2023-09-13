@@ -18,6 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>{users}</h1>
+      <h1>This project is deployed in netlify.</h1>
     </div>
   );
 }
