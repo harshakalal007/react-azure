@@ -5,6 +5,10 @@ const app = express();
 
 app.use(express.static("./client/build"));
 
+app.get("/", (req, res) => {
+  res.send({message: "Hey, you are using render to deploy."})
+})
+
 app.get("/check", (req, res) => {
   res.send({
     message: "Lekim your server is working"
